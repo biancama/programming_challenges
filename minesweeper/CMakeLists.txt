@@ -42,15 +42,15 @@ file(GLOB MAIN_SRC "src/Minesweeper.cpp")
 #if (project_build_tests)
 enable_testing()
 add_executable(${TEST_EXECUTABLE_NAME} ${TEST_FILES} ${SRC_FILES} test/Minesweeper_unittest.cpp)
-target_link_libraries(${TEST_EXECUTABLE_NAME}
-        pthread)
-target_link_libraries(${TEST_EXECUTABLE_NAME}
-        gmock
-        gmock_main)
-target_link_libraries(${TEST_EXECUTABLE_NAME}
-        gtest
-        gtest_main)
-add_test(all-tests ${TEST_EXECUTABLE_NAME})
+#target_link_libraries(${TEST_EXECUTABLE_NAME}
+#        pthread)
+#target_link_libraries(${TEST_EXECUTABLE_NAME}
+#        gmock
+#        gmock_main)
+#target_link_libraries(${TEST_EXECUTABLE_NAME}
+#        gtest
+#        gtest_main)
+#add_test(all-tests ${TEST_EXECUTABLE_NAME})
 #endif()
 
 
